@@ -1,0 +1,145 @@
+ :root {
+      --primary: #4e73df;
+      --secondary: #1cc88a;
+      --light-bg: #f8f9fc;
+      --text-dark: #2e2e2e;
+      --text-muted: #6c757d;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--light-bg);
+      color: var(--text-dark);
+      min-height: 100vh;
+    }
+
+    .header {
+      text-align: center;
+      padding: 60px 20px;
+      background: var(--text-muted);
+      color: white;
+      border-radius : 20px 50px ;
+    }
+
+    .header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    .header .subtitle {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .solutions-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .solution-card {
+      background: white;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: 0.3s;
+    }
+
+    .solution-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .card-icon {
+      font-size: 2.5rem;
+      color: var(--primary);
+      background: #e7ecff;
+      padding: 15px;
+      border-radius: 50%;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+
+    .card-title {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .card-description {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 15px;
+    }
+
+    .card-features li {
+      font-size: 0.9rem;
+      margin-left: 20px;
+      list-style: disc;
+      color: #444;
+    }
+
+    .card-price {
+      margin-top: 15px;
+      font-weight: bold;
+      color: var(--secondary);
+    }
+
+    .cta-section {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .cta-button {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 14px 28px;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .cta-button:hover {
+      background: #3751d4;
+    }
+
+    .social-links {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      font-size: 1.5rem;
+      color: var(--primary);
+      transition: color 0.3s ease;
+    }
+
+    .social-links a:hover {
+      color: var(--secondary);
+    }
